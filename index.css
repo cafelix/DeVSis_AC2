@@ -1,10 +1,12 @@
 body {
     margin: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
     display: grid;
-    grid-template-rows: 120px 50px 500px 100px;
+    grid-template-rows: 120px 70px 500px 100px;
     grid-template-columns: 1.5fr 2.5fr;
     grid-template-areas: "header header" "navbar navbar" "table-data graphic" "footer footer"
 }
@@ -16,6 +18,8 @@ header {
 
 nav {
     grid-area: navbar;
+    display: flex;
+    align-self: center;
 }
 
 .topnav {
@@ -38,7 +42,6 @@ nav {
 }
 
 .graphic-data {
-    height: 500px;
     margin: 0 auto;
     grid-area: graphic;
 }
@@ -62,10 +65,6 @@ td {
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     background-color: #1C3AA9;
     color: white;
     text-align: center;

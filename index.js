@@ -1,6 +1,6 @@
 Highcharts.chart('container', {
     title: {
-        text: 'Índice semanal de consumo de Frutas'
+        text: 'Gráfico demonstrativo de dados'
     },
     xAxis: {
         categories: ['Variável 1', 'Variável 2', 'Variável 3', 'Variável 4']
