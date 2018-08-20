@@ -1,13 +1,16 @@
 Highcharts.chart('container', {
     title: {
-        text: 'Gráfico demonstrativo de dados'
+        text: 'Gráfico demonstrativo de dados',
+        style: {
+            fontWeight: 'bold'
+        }
     },
     xAxis: {
         categories: ['Variável 1', 'Variável 2', 'Variável 3', 'Variável 4']
     },
     labels: {
         items: [{
-            html: 'Consumo total de frutas',
+            html: 'Total',
             style: {
                 left: '50px',
                 top: '18px',
@@ -18,15 +21,15 @@ Highcharts.chart('container', {
     series: [{
         type: 'column',
         name: 'Objeto A',
-        data: [3, 2, 1, 3]
+        data: [3.00, 2.00,1.00, 3.00]
     }, {
         type: 'column',
         name: 'Objeto B',
-        data: [2, 3, 5, 7]
+        data: [2.00, 3.00, 5.00, 7.00]
     }, {
         type: 'column',
         name: 'Objeto C',
-        data: [4, 3, 3, 9]
+        data: [4.00, 3.00, 3.00, 9.00]
     }, {
         type: 'spline',
         name: 'Média',
@@ -38,17 +41,17 @@ Highcharts.chart('container', {
         }
     }, {
         type: 'pie',
-        name: 'Total consumption',
+        name: 'Total',
         data: [{
-            name: 'Maria',
+            name: 'Objeto A',
             y: 13,
             color: Highcharts.getOptions().colors[0]
         }, {
-            name: 'João',
+            name: 'Objeto B',
             y: 23,
             color: Highcharts.getOptions().colors[1]
         }, {
-            name: 'Pedro',
+            name: 'Objeto C',
             y: 19,
             color: Highcharts.getOptions().colors[2]
         }],

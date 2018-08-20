@@ -2,6 +2,7 @@ body {
     margin: 0;
     width: 100%;
     font-family: 'Roboto', sans-serif;
+    background-color: #95CEFF;
 }
 
 .wrapper {
@@ -17,6 +18,7 @@ header {
 }
 
 nav {
+    
     grid-area: navbar;
     display: flex;
     align-self: center;
@@ -44,11 +46,16 @@ nav {
 .graphic-data {
     margin: 0 auto;
     grid-area: graphic;
+    align-self: center;
 }
 
 .table-data {
+    display: flex;
     text-align: center;
     grid-area: table-data;
+    padding-left: 50px;
+    padding-top: 30px;
+    flex-direction: column; 
 }
 
 table,
@@ -56,15 +63,26 @@ th,
 td {
     border: 1px solid black;
     border-collapse: collapse;
+    
 }
 
 th,
 td {
     padding: 15px;
-    text-align: left;
+    text-align: center;
+    background-color: white;
+}
+
+#average-results {
+    font-weight: bold;
+    
 }
 
 footer {
+    width: 100%;
+    margin: auto;
+    bottom: 0;
+    position: fixed;
     background-color: #1C3AA9;
     color: white;
     text-align: center;
