@@ -79,6 +79,7 @@ td {
 }
 
 footer {
+    position: fixed;
     width: 100%;
     margin: auto;
     bottom: 0;
